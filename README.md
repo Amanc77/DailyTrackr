@@ -1,8 +1,8 @@
-
 # 📘 DailyTrackr
 
-**[View on GitHub](https://github.com/Amanc77/DailyTrackr)**  
-📸 **Watch the demo:** *(Add YouTube link here if available)*
+🌐 **[Live Demo](https://dailytrackrr.onrender.com/)**  
+🔗 **[View on GitHub](https://github.com/Amanc77/DailyTrackr)**  
+📸 **[Watch the demo] (https://www.youtube.com/watch?v=pxdXq0Zn93c)**
 
 ---
 
@@ -19,6 +19,7 @@ This project was created to practice backend development while building somethin
 If you're a beginner learning backend development, this app is a great starting point!
 
 It includes:
+
 - A clean and responsive UI with Tailwind CSS
 - File-based record handling with the Node.js `fs` module
 - Dynamic routes for viewing, editing, and creating records
@@ -63,23 +64,26 @@ DailyTrackr/
 
 ## 🚀 Getting Started
 
-1. **Clone the repository**  
+1. **Clone the repository**
+
    ```bash
    git clone https://github.com/Amanc77/DailyTrackr
    cd DailyTrackr
    ```
 
-2. **Install dependencies**  
+2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
-3. **Start the server**  
+3. **Start the server**
+
    ```bash
    node app.js
    ```
 
-4. **Visit**  
+4. **Visit locally**  
    Open your browser at: [http://localhost:3000](http://localhost:3000)
 
 ---
@@ -99,6 +103,6 @@ DailyTrackr/
 
 Made with ❤️ by Aman Kumar Chaurasiya  
 🔗 [GitHub](https://github.com/Amanc77)  
-🔗 [LinkedIn](https://linkedin.com/in/amankumarchaurasiya)
+🔗 [LinkedIn](https://linkedin.com/in/amanc77)
 
 ---
