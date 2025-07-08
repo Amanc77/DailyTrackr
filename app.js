@@ -5,7 +5,7 @@ import { fileURLToPath } from "url";
 import path from "path";
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -16,7 +16,7 @@ app.get("/", (req, res) => {
 
   fs.readdir(fileName, (err, files) => {
     if (err) {
-      console.error("Error reading directory:", err);
+      console.error("Error reading  directory:", err);
       res.status(500).send("Error reading directory");
     } else {
       res.render("index", { files: files });
@@ -62,7 +62,7 @@ app.get("/edit/:fileName", (req, res) => {
 
 app.post("/update/:fileName", (req, res) => {
   const fileName = req.params.fileName;
-  const content = String(req.body.content);
+  const content = String(req.body.editedData);
   fs.writeFile(`./files/${fileName}`, content, "utf8", (err) => {
     if (err) {
       console.error("Error writing file:", err);
@@ -92,6 +92,10 @@ app.post("/create", (req, res) => {
 
 app.get("/login", (req, res) => {
   res.render("login");
+});
+
+app.post("/afterLogin", (req, res) => {
+  res.redirect("/");
 });
 
 app.get("/delete/:fileName", (req, res) => {

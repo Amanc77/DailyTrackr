@@ -8,7 +8,7 @@
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body class="bg-gray-900 text-white font-sans min-h-screen flex flex-col">
-    <!-- ✅ Navbar -->
+    <!-- Navbar -->
     <nav
       class="bg-gray-800 shadow-lg p-4 flex justify-between items-center sticky top-0 z-10"
     >
@@ -25,7 +25,7 @@
           </button>
         </div>
         <!-- Navigation links -->
-        <div
+        <!-- <div
           id="nav-links"
           class="hidden md:flex md:space-x-6 text-gray-300 font-medium"
         >
@@ -39,24 +39,21 @@
             class="hover:text-yellow-400 transition duration-300 block md:inline-block"
             >Create New Record</a
           >
-          <a
-            href="/login"
-            class="hover:text-yellow-400 transition duration-300 block md:inline-block"
-            >Login</a
-          >
-        </div>
+        </div> -->
       </div>
     </nav>
 
-    <!-- ✅ Main Section -->
+    <!-- Main Section -->
     <main class="flex-1 max-w-4xl mx-auto mt-4 p-4 sm:p-6 md:mt-10 md:p-6">
       <h2
         class="text-2xl sm:text-3xl font-semibold mb-4 sm:mb-8 text-yellow-300 flex items-center"
       >
         <span class="mr-2">🔒</span> Login to Your Account
       </h2>
+
+      <!-- Form with redirect functionality -->
       <form
-        action="/login"
+        action="/afterLogin"
         method="POST"
         class="bg-gray-800 rounded-lg p-4 sm:p-6 shadow-md hover:shadow-xl transition duration-300"
       >
@@ -71,6 +68,7 @@
             placeholder="Enter your username"
           />
         </div>
+
         <div class="mb-4">
           <label for="password" class="block text-lg mb-2">Password</label>
           <input
@@ -82,6 +80,7 @@
             placeholder="Enter your password"
           />
         </div>
+
         <div
           class="mt-4 sm:mt-6 flex flex-col sm:flex-row justify-end space-y-2 sm:space-y-0 sm:space-x-4"
         >
@@ -107,41 +106,26 @@
         >
           Welcome Back
         </h3>
-        <p class="text-gray-300 mb-1 sm:mb-2 text-sm sm:text-base">
-          Log in to access your daily records securely. Last login check: <%=
-          new Date().toLocaleString('en-IN', { timeZone: 'Asia/Kolkata' }) %>
-          IST.
-        </p>
         <p class="text-gray-400 text-sm sm:text-base">
-          If you don’t have an account, consider creating one to start tracking
+          If you don't have an account, consider creating one to start tracking
           your activities today!
         </p>
       </div>
     </main>
 
-    <!-- ✅ Footer -->
+    <!-- Footer -->
     <footer
       class="bg-gray-800 p-2 sm:p-4 text-center text-gray-400 border-t border-gray-700 text-xs sm:text-sm"
     >
       <p>© 2025 Daily Tracker. All rights reserved.</p>
       <p class="mt-1">
-        Developed with ❤️ by Your Name |
+        Developed aman
         <a
-          href="/contact"
+          href="/github.com/Amanc77"
           class="text-yellow-400 hover:underline text-xs sm:text-sm"
           >Contact Us</a
         >
       </p>
     </footer>
-
-    <!-- ✅ JavaScript for Mobile Menu Toggle -->
-    <script>
-      const menuToggle = document.getElementById("menu-toggle");
-      const navLinks = document.getElementById("nav-links");
-
-      menuToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("hidden");
-      });
-    </script>
   </body>
 </html>
